@@ -1,0 +1,48 @@
+<form id="vehicle-form">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" id="id" readonly class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="chassi">Chassi:</label>
+        <input type="text" id="chassi" minlength="17" maxlength="17" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="fabricacao">Data de Fabricação:</label>
+        <input type="date" id="fabricacao" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" required class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Vendido:</label>
+        <div class="radio-group">
+            <input type="radio" id="vendido-sim" name="vendido" value="sim">
+            <label for="vendido-sim">Sim</label>
+            <input type="radio" id="vendido-nao" name="vendido" value="nao" checked>
+            <label for="vendido-nao">Não</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="quilometragem">Quilometragem:</label>
+        <input type="number" id="quilometragem" required class="form-control">
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="button" onclick="location.hash = '#/list'" class="btn btn-secondary">Cancelar</button>
+    </div>
+
+    <div id="mensagem" class="message"></div>
+</form>
